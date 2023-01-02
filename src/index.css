@@ -1,0 +1,423 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	box-sizing: border-box;
+	padding: 1rem 5rem;
+	background-color: #222222;
+}
+@media screen and (max-width: 768px) {
+	body {
+		padding: 0 0 0 0;
+	}
+}
+.border {
+	border: 1px solid #222222;
+}
+
+.home__container {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+	.home__container {
+		padding: 0;
+	}
+}
+
+.home {
+	display: inline;
+	justify-content: start;
+	align-items: stretch;
+	border-radius: 25rem;
+	border: none;
+	margin-left: 10rem;
+	margin-top: 10rem;
+}
+
+.styling {
+	width: 50rem;
+}
+
+.one {
+	animation-name: fadeInFromLeft;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+}
+
+.two {
+	animation-name: fadeInFromLeft;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+	animation-delay: 0.5s;
+}
+
+.three {
+	animation-name: fadeInFromLeft;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+	animation-delay: 1s;
+}
+
+.home__text {
+	font-size: 8rem;
+	font-weight: bold;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+.nav {
+	background-color: #5bc9e7;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 30px;
+	align-items: center;
+	padding: 0px 20px;
+	height: 60px;
+	border-bottom: 2px solid #979797;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* media query */
+
+.nav__title {
+	font-size: 3rem;
+	color: #000;
+	font-family: "Montserrat";
+	font-weight: bolder;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0px 20px;
+}
+
+.nav__link {
+	font-size: 2rem;
+	color: #000;
+	display: inline;
+	font-family: "Montserrat";
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 2rem;
+}
+
+.desc {
+	display: flex;
+	padding: 2rem;
+	align-items: center;
+}
+
+.desc__img {
+	width: 40rem;
+	height: 60rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.desc__img img {
+	width: 40rem;
+	height: 40rem;
+	background-color: #fff;
+}
+
+.desc__info--rating {
+	font-size: 3rem;
+	color: grey;
+	display: inline;
+	margin-left: 2rem;
+}
+
+.certified {
+	font-size: 1rem;
+	display: inline-block;
+	width: fit-content;
+	margin: 1rem 1rem 0.5rem 1rem;
+	padding: 0.5rem 0.5rem;
+	color: white;
+	background-color: darkgrey;
+	border-radius: 5rem;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.desc__info {
+	margin-left: 2rem;
+	padding: 2rem;
+	height: 60rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+.desc__info--title {
+	margin-top: 2rem;
+	font-size: 8rem;
+	color: #000;
+}
+
+.desc__info--button {
+	font-size: 2rem;
+	color: #000;
+	text-decoration: none;
+	margin-right: 2rem;
+	margin-top: 3rem;
+	border-radius: 5rem;
+	padding: 0.5rem 1rem;
+	border: grey;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.desc__info--text {
+	font-size: 2rem;
+	color: #000;
+	margin-left: 4rem;
+	margin-top: 1rem;
+}
+
+.desc__img--price {
+	font-size: 5rem;
+	color: #118c4f;
+	font-family: Pacifico;
+	margin-left: 2rem;
+}
+
+.about {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	padding: 0px 20px;
+}
+
+.about__title {
+	font-size: 6rem;
+	color: #000;
+	text-decoration: dotted underline;
+
+	animation: fadeInFromLeft 1s ease-out backwards;
+}
+
+.about__text {
+	font-size: 2rem;
+	color: #000;
+	margin-top: 2rem;
+}
+
+.firstWord {
+	margin-left: 10rem;
+}
+
+.taxes {
+	font-size: 2rem;
+	display: inline-block;
+	width: fit-content;
+	margin: 1rem;
+}
+
+.input-todo {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 2rem;
+	height: 4rem;
+	width: 40rem;
+	border-radius: 10px;
+	padding: 2rem 4rem;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+	padding-right: 12rem;
+}
+
+.add-todo {
+	font-size: 1.2rem;
+	height: 3rem;
+	width: 8rem;
+	border: none;
+	border-radius: 10px;
+	color: #222222;
+	background-color: #5bc9e7;
+	font-weight: 900;
+	display: inline-block;
+	margin-left: -9rem;
+	outline-offset: 0;
+}
+
+/* media query for input */
+@media screen and (max-width: 768px) {
+	.input-todo {
+		width: 20rem;
+	}
+
+	.add-todo {
+		margin-left: 2rem;
+	}
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+}
+
+.todos-title {
+	color: #fff;
+	margin-bottom: 1rem;
+}
+
+.input-todo:focus {
+	/* no outline */
+	outline: 3px solid #5bc9e7;
+	outline-offset: 8px;
+	border: none;
+}
+
+.input-container {
+	margin-top: 4rem;
+	display: flex;
+	align-items: center;
+}
+
+.task-container {
+	margin-top: 5rem;
+	display: flex;
+	column-gap: 2rem;
+	padding: 2rem;
+	width: 80%;
+	min-height: 20vh;
+	background-color: #333333;
+	border-radius: 5px;
+}
+
+/* media query for task container  */
+@media screen and (max-width: 768px) {
+	.task-container {
+		flex-direction: column;
+		row-gap: 2rem;
+		width: 90%;
+	}
+}
+
+.todos {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	row-gap: 2rem;
+}
+
+.completed {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	row-gap: 2rem;
+}
+
+.card-todo {
+	color: white;
+}
+
+.card-date {
+	color: white;
+}
+
+.card {
+	padding: 1rem;
+	background-color: #222222;
+	min-height: 10rem;
+}
+.card-completed {
+	padding: 1rem;
+	background-color: #555555;
+	min-height: 10rem;
+}
+.card-done {
+	background-color: #5bc9e7;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 1.6rem;
+	width: 6rem;
+	height: 4rem;
+	align-self: flex-end;
+	margin-left: auto;
+	margin-right: 3px;
+}
+
+.card-button-container {
+	margin-left: auto;
+}
+
+@keyframes fadeInFromTop {
+	0% {
+		opacity: 0;
+		transform: translateY(-2rem);
+	}
+	80% {
+		transform: translateY(1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes fadeInFromBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(8rem);
+	}
+	80% {
+		transform: translateY(-2rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes fadeInFromLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-27rem);
+	}
+	80% {
+		transform: translateX(1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes fadeInFromRight {
+	0% {
+		opacity: 0;
+		transform: translateX(27rem);
+	}
+	80% {
+		transform: translateX(-1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
