@@ -269,6 +269,8 @@ body {
 @media screen and (max-width: 768px) {
 	.input-todo {
 		width: 20rem;
+		padding: 1rem 1rem;
+		padding-right: 0rem;
 	}
 
 	.add-todo {
