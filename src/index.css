@@ -87,6 +87,7 @@ body {
 .nav {
 	background-color: #5bc9e7;
 	display: flex;
+        margin-top: 1rem;
 	justify-content: space-between;
 	border-radius: 30px;
 	align-items: center;
